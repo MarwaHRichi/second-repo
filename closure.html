@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+        //closure ou fermeteur
+        // fonction compteur initialise un variable i et retourne une fonction anonyme
+        function compteur() {
+            var i = 0 ; //initilisation de i 
+           //retourne une fonction anonyme (retourner)
+            return function() 
+             {
+                return i++;   
+            }
+            
+        }
+        alert(compteur()); //dans ce cas la fonction anonyme est retourne
+
+        // -> pour afficher une fonction anonyme il faut tout d'abord déclarer une variable
+        // pour cette fonction ou on déclare une fonction auto-invoqué
+
+        /// pour corriger cette fonction il faut : et devient executable 
+        // 1- enformer dans une variable
+        // 2- soit le transformer en fonction auto-invoqué
+
+      //compter à partir de 0 car i=0
+        function compteur() {
+            var i = 0 ; //initilisation de i 
+           //retourne une fonction anonyme (retourner)
+            return function() 
+             {
+                return i++;   
+            }
+            
+        }
+        //deux compteur
+        var plusUn = compteur();
+        var autreInstance = compteur();
+
+        alert("Premier tour : " +plusUn() +
+              "\nPremière Instance : " +autreInstance()+
+              "\nDeuxième tour : " +plusUn()+
+                "\nTroixième tour : " +plusUn());
+    </script>
+</body>
+</html>

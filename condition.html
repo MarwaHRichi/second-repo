@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var heure = 13;
+        if (heure <= 18 == true) {
+            alert("bonjour");
+        }
+        else{
+            alert("bonsoir");
+        }*/
+
+        /*var heure = 9;
+        /*if (heure < 12 == true) {
+            alert("C'est le matin");
+        } 
+        else if (heure == 12 == true) {
+            alert("C'est le midi");
+        } 
+        else if (heure < 18 == true) {
+            alert("C'est l'après midi");
+        } 
+        else {
+            alert("C'est le soir");
+       
+        }*/
+
+       /* if (typeof(heure) == "number" == true) {
+          
+            if (heure < 12 == true) {
+                alert("C'est le matin");
+            } 
+            else if (heure == 12 == true) {
+                 alert("C'est le midi");
+            } 
+            else if (heure < 18 == true) {
+                alert("C'est l'après midi");
+            } 
+            else {
+            alert("C'est le soir");
+            }
+        }
+        else{
+            alert("C'est un mauvais type")
+        }*/
+
+        // operateur logique ET
+       /* var heure = 12;
+        if (heure >= 0 && heure <= 12 == true) {
+            alert("c'est le matin");
+        } else if ( heure == 12 == true) {
+            alert(" il est midi pile");
+        } else if (heure > 12 && heure <= 24 == true) {
+            alert("C'est l'apres midi ou le soir");
+        } else {
+            alert("le valeur entrée n'est pas valide")
+        }*/
+
+        //operatuer OU
+        /*var heure = 9;
+        if (heure < 0 || heure > 24 == false) {
+            alert("l'heure est invalide");
+        } else {
+            alert("l'heure est valide");
+        }*/
+         
+        // nier le condition "contraire"
+
+        /* var heure = 19;
+         if ((heure < 16) == true)  {
+            alert("il est plus que 16h");
+         } else {
+            alert("il est moins que 16h");
+
+         }*/
+         /*var heure = 18;
+         /*if (heure < 12 == false) { // equivalente à (!(heure < 12))
+             alert("il est midi passé");
+         }*/
+         /*if (!(heure < 12)) { //envoyé la valeur inverse à heure <12  qui est true
+             alert("il est midi passé");
+         }*/
+        /* var x =6 , y="";
+         if (x) {
+             alert("x est true");
+         }
+         if (y) {
+           alert ("y est true");
+         } else{
+             alert("y est false");
+         }*/ 
+         //structure ternaire avec ? et !
+         var heure = 9, bon="";
+         //var bon = (heure <= 18) ? "Bonjour" : "Bonsoir"; //structure ternaire
+         //alert(bon);
+         // equivalent à 
+         if (heure <= 18) {
+             //alert ("bonjour");  ou 
+             bon="bonjour";
+         }
+         else {
+            // alert("bonsoir") ou
+            bon="bonsoir";
+         }
+         alert(bon);
+
+    </script>
+</body>
+</html>
